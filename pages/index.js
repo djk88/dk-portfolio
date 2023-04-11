@@ -41,8 +41,8 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
-                >
+                  href="https://docs.google.com/document/d/1xJ0grPAab9ClEHyEMQjZqFqRiUKUnuYV/edit?usp=sharing&ouid=105584303304321756439&rtpof=true&sd=true"
+                  target="_blank">
                   Resume
                 </a>
               </li>
@@ -147,6 +147,7 @@ export default function Home() {
               <span className="text-teal-500">Reactavision</span>: This project was completed as part of the React course and focuses on working with the TMDB API. I worked on this project with another team member and used React and CSS.
               </p>
               </a>
+              <a href="https://reactavision.vercel.app/" target="_blank"><span className="text-teal-500">Click here for a demo!</span></a>
             </div>
             <div className="basis-1/3 flex-1">
             <a href="#">
@@ -160,6 +161,7 @@ export default function Home() {
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               <span className="text-teal-500">Bali Tourism website</span>: This project was completed as part of the front-end web course and involved building a fake tourism website to a country of our choosing. I worked on this project individually and used HTML5, CSS and Javascript.
               </p>
+              
               </a>
             </div>
             <div className="basis-1/3 flex-1">
