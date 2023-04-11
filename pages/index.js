@@ -30,7 +30,7 @@ export default function Home() {
       <main className=" bg-gray-300 px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="mb-">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">Built with Next.js & Tailwind</h1>
+            <h1 className="font-burtons text-xl">Next.js & Tailwind</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -48,7 +48,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
+          <div className="text-center py-10">
             <h2 className="text-5xl py-2 text-teal-500 font-medium dark:text-teal-400 md:text-6xl">
               David Kim
             </h2>
@@ -59,8 +59,8 @@ export default function Home() {
               I'm a junior full stack developer with a passion for creating
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://github.com/djk88"><AiFillGithub /></a>
-              <a href="https://www.linkedin.com/in/david-kim-0054b46b/"><AiFillLinkedin /></a>
+              <a href="https://github.com/djk88" target="_blank"><AiFillGithub /></a>
+              <a href="https://www.linkedin.com/in/david-kim-0054b46b/" target="_blank"><AiFillLinkedin /></a>
               <a href="mailto:davekim88@gmail.com"><AiFillMail /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
@@ -137,7 +137,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1 ">
             <a href="https://github.com/djk88/reactavision">
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover shadow-lg"
                 width={"100%"}
                 height={"100%"}
                 src={web1}
@@ -152,7 +152,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
             <a href="#">
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover shadow-lg"
                 width={"100%"}
                 height={"100%"}
                 src={web2}
@@ -167,7 +167,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
             <a href="#">
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover shadow-lg"
                 width={"100%"}
                 height={"100%"}
                 src={web3}
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <a href="#">
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover shadow-lg"
                 width={"100%"}
                 height={"100%"}
                 src={web4}
@@ -195,7 +195,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
             <a href="https://github.com/ceilidh-ashcroft-bcit/CakeFactory">
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover shadow-lg"
                 width={"100%"}
                 height={"100%"}
                 src={web5}
