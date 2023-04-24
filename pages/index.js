@@ -40,7 +40,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 transition duration-700 ease-in-out"
                   href="https://docs.google.com/document/d/1xJ0grPAab9ClEHyEMQjZqFqRiUKUnuYV/edit?usp=sharing&ouid=105584303304321756439&rtpof=true&sd=true"
                   target="_blank">
                   Resume
@@ -135,13 +135,14 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-            <a href="https://github.com/djk88/reactavision">
+            <a href="https://github.com/djk88/reactavision" target="_blank">
               <Image
                 className="rounded-lg object-cover shadow-lg"
                 width={"100%"}
                 height={"100%"}
                 src={web1}
                 alt="movie website built with React and CSS"
+                
               />
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               <span className="text-teal-500">Reactavision</span>: This project was completed as part of the React course and focuses on working with the TMDB API. I worked on this project with another team member and used React and CSS.
@@ -150,28 +151,14 @@ export default function Home() {
               <a href="https://reactavision.vercel.app/" target="_blank"><span className="text-teal-500">Click here for a demo!</span></a>
             </div>
             <div className="basis-1/3 flex-1">
-            <a href="#">
-              <Image
-                className="rounded-lg object-cover shadow-lg"
-                width={"100%"}
-                height={"100%"}
-                src={web2}
-                alt="fake tourism website built with html5, css, and javascript"
-              />
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              <span className="text-teal-500">Bali Tourism website</span>: This project was completed as part of the front-end web course and involved building a fake tourism website to a country of our choosing. I worked on this project individually and used HTML5, CSS and Javascript.
-              </p>
-              
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-            <a href="#">
+            <a href="https://github.com/djk88/MyBankAssignment" target="_blank">
               <Image
                 className="rounded-lg object-cover shadow-lg"
                 width={"100%"}
                 height={"100%"}
                 src={web3}
                 alt="fake bank website build with ASP.Net and C-Sharp"
+                
               />
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               <span className="text-teal-500">Bank Website</span>: This project was completed as part of the ASP.Net course and involved building a fake bank site. This website allows users to register/login to see their own accounts. I worked on this project individually and used ASP.Net.
@@ -179,27 +166,14 @@ export default function Home() {
               </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <a href="#">
-              <Image
-                className="rounded-lg object-cover shadow-lg"
-                width={"100%"}
-                height={"100%"}
-                src={web4}
-                alt="fake bank website build with ASP.Net and C-Sharp"
-              />
-             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              <span className="text-teal-500">Portfolio</span>: This project was completed as part of the Angular course and involved building a portfolio. This website allows users to filter by category or tag. I worked on this project individually and used Angular and CSS.
-              </p>
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-            <a href="https://github.com/ceilidh-ashcroft-bcit/CakeFactory">
+            <a href="https://github.com/ceilidh-ashcroft-bcit/CakeFactory" target="_blank">
               <Image
                 className="rounded-lg object-cover shadow-lg"
                 width={"100%"}
                 height={"100%"}
                 src={web5}
                 alt="fake bank website build with ASP.Net and C-Sharp"
+                
               />
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               <span className="text-teal-500">Cake Factory</span>: This project was completed as part of the ASP.NET internal project and involved building a business website that sells cakes. This website allows users to register/login and purchase a pre made cake or create a custom cake. Users are also able to see their purchase history once logged in as well. I worked on this project with 4 other team members.

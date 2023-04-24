@@ -9,20 +9,17 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
    ],
-   transform: (content) => content.replace(/taos:/g, ''),
   theme: {
     extend: {
+      transitionDuration: {
+        '500': '500ms',
+      },
+      transitionTimingFunction: {
+        'ease-out': 'cubic-bezier(0.25, 0.1, 0.25, 1)',
+      },
       fontFamily: {
         burtons: 'Burtons, sans-serif'
     },
   },
 },
-  plugins: [
-    require('taos/plugin')
-  ],
-  safelist: [
-    '!duration-0',
-    '!delay-0',
-    'html.js :where([class*="taos:"]:not(.taos-init))'
-  ],
 };
