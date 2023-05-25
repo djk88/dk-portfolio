@@ -3,9 +3,9 @@ import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web5 from "../public/web5.png";
+import web9 from "../public/web9.mp4";
 import web7 from "../public/web7.mp4";
+import web8 from "../public/web8.mp4";
 import avatar from "../public/avatar.png";
 
 export default function Home() {
@@ -163,23 +163,19 @@ export default function Home() {
               included a brief description of each project below to give you an
               idea of what it's all about.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I'm constantly learning and growing as a web developer, and am
-              always excited to take on new projects and challenges. If you have
-              any questions or are interested in collaborating on a project,
-              please don't hesitate to reach out. Thanks for checking out my
-              portfolio!
-            </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+            <div className="basis-2/3 flex-1 ">
               <a href="https://github.com/djk88/reactavision" target="_blank">
-                <Image
+                <video
                   className="rounded-lg object-cover shadow-lg"
                   width={"100%"}
                   height={"100%"}
-                  src={web1}
+                  src={web9}
                   alt="movie website built with React and CSS"
+                  autoPlay
+                  loop
+                  muted
                 />
                 <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                   <span className="text-teal-500">BCIT - Internal Project</span>
@@ -198,17 +194,20 @@ export default function Home() {
                 </p>
               </a>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-2/3 flex-1">
               <a
                 href="https://github.com/ceilidh-ashcroft-bcit/CakeFactory"
                 target="_blank"
               >
-                <Image
+                <video
                   className="rounded-lg object-cover shadow-lg"
                   width={"100%"}
                   height={"100%"}
-                  src={web5}
+                  src={web8}
                   alt="fake bank website build with ASP.Net and C-Sharp"
+                  autoPlay
+                  muted
+                  loop
                 />
                 <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                   <span className="text-teal-500">BCIT - Internal Project</span>
@@ -224,7 +223,7 @@ export default function Home() {
                 </p>
               </a>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-2/3 flex-1">
               <video
                 className="rounded-lg object-cover shadow-lg"
                 width={"100%"}
