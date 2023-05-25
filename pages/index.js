@@ -5,7 +5,6 @@ import { useState } from "react";
 import Image from "next/image";
 import web1 from "../public/web1.png";
 import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 import web7 from "../public/web7.mp4";
 import avatar from "../public/avatar.png";
 
@@ -72,11 +71,11 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Hello! My name is David Kim, and I'm a junior web developer that
-              recently completed the Software Systems Development course at{" "}
-              <span className="text-teal-500">BCIT</span>. This portfolio
-              documents my journey through the program, showcasing my skills and
-              projects I've worked on.
+              Hello! My name is David Kim, and I'm a junior full stack web
+              developer that recently completed the Software Systems Development
+              (SSD) course at <span className="text-teal-500">BCIT</span>. This
+              portfolio documents my journey through the program, showcasing my
+              skills and projects I've worked on.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Prior to my foray into web development, I spent over a decade
@@ -105,11 +104,6 @@ export default function Home() {
               and <span className="text-teal-500">design</span>, and how the two
               can work together to create intuitive and effective experiences
               for users.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Thank you for taking the time to explore my portfolio. If you're
-              interested in working together or have any questions, please don't
-              hesitate to reach out!
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -189,10 +183,13 @@ export default function Home() {
                 />
                 <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                   <span className="text-teal-500">BCIT - Internal Project</span>
-                  : This project was completed as part of the React course and
-                  focuses on working with the TMDB(The movie database) API. I
-                  created the home, favorites list, and search pages using React
-                  and CSS.{" "}
+                  : This web app was completed as part of the React course and
+                  focuses on working with the TMDB(The movie database) API. This
+                  app features the ability to browse upcoming, top, most popular
+                  and now playing movies on the home page. It also has features
+                  where a user can search or save a movie to their favorites
+                  list using their local storage.I created the home, favorites
+                  list, and search pages using React and CSS.{" "}
                   <a href="https://reactavision.vercel.app/" target="_blank">
                     <span className="text-teal-500">
                       Click here for a demo!
@@ -215,13 +212,15 @@ export default function Home() {
                 />
                 <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                   <span className="text-teal-500">BCIT - Internal Project</span>
-                  : This full stack project was completed as part of the ASP.NET
-                  internal project and involved building a business website that
+                  : This full stack web app was completed as part of internal
+                  passion project and involved building a business website that
                   features Pay Pal intergration, custom cakes, user registration
                   and history. I created the home page where users are able to
                   select either a pre made cake or a custom cake. I also created
                   the detail pages for both pre made and custom cakes where
-                  users can select toppings, fillings, and shape.
+                  users can select toppings, fillings, and shape. Created using
+                  ASP.NET for backend, Microsoft SQL Servier for database, and
+                  HTML/CSS for frontend.
                 </p>
               </a>
             </div>
@@ -237,15 +236,16 @@ export default function Home() {
                 loop // Add the loop attribute here
               />
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className="text-teal-500">Agilitek</span>: This full stack
-                project was comissioned by Agilitek and involved creating an
-                application that extracts transaction and demographic data from
-                user submitted segments. My contribution to this project was to
-                create a responsive dashboard where widgets can be moved and
-                resized. I made this dashboard using the react grid layout
-                library. I also then created all of widgets from backend to
-                frontend. We used React for the frontend, Amazon RDS for
-                database and SST for backend to deploy to AWS.
+                <span className="text-teal-500">Agilitek Solutions</span>: This
+                full stack web app was comissioned by Agilitek and involved
+                creating an application that extracts transaction and
+                demographic data from user submitted segments. My contribution
+                to this project was to create a responsive dashboard where
+                widgets can be moved and resized. I made this dashboard using
+                the react grid layout library. I also then created all of
+                widgets from backend to frontend. Created using React for the
+                frontend, Amazon RDS for database and SST for backend to deploy
+                to AWS.
               </p>
             </div>
           </div>
