@@ -6,6 +6,7 @@ import Image from "next/image";
 import web1 from "../public/web1.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import web7 from "../public/web7.mp4";
 import avatar from "../public/avatar.png";
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 transition duration-700 ease-in-out"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 transition duration-700 ease-in-out"
                   href="https://docs.google.com/document/d/1xJ0grPAab9ClEHyEMQjZqFqRiUKUnuYV/edit?usp=sharing&ouid=105584303304321756439&rtpof=true&sd=true"
                   target="_blank"
                 >
@@ -42,14 +43,11 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center py-10">
-            <h2 className="text-5xl py-2 text-teal-500 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-5xl py-2 bg-gradient-to-r from-cyan-500 to-teal-500 text-transparent bg-clip-text font-medium dark:text-teal-400 md:text-6xl">
               David Kim
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Minimalist
-            </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              I'm a junior full stack developer with a passion for creating
+              Junior Full Stack Developer
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/djk88" target="_blank">
@@ -74,11 +72,11 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Hello! My name is David Kim, and I'm a junior web developer
-              currently enrolled in the Software Systems Development course at{" "}
+              Hello! My name is David Kim, and I'm a junior web developer that
+              recently completed the Software Systems Development course at{" "}
               <span className="text-teal-500">BCIT</span>. This portfolio
               documents my journey through the program, showcasing my skills and
-              projects as I progress towards graduation in May 2023.
+              projects I've worked on.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Prior to my foray into web development, I spent over a decade
@@ -117,22 +115,22 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <div className="bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Front End Development
+                Frontend Development
               </h3>
               <h4 className="py-4 text-teal-600">Technologies</h4>
               <p className="text-gray-800 py-1">HTML5</p>
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">CSS</p>
               <p className="text-gray-800 py-1">Tailwind</p>
-              <p className="text-gray-800 py-1">Javascript</p>
+              <p className="text-gray-800 py-1">JavaScript</p>
             </div>
             <div className="bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Back End Development
               </h3>
               <h4 className="py-4 text-teal-600">Technologies</h4>
-              <p className="text-gray-800 py-1">ASP.Net</p>
-              <p className="text-gray-800 py-1">C-Sharp</p>
+              <p className="text-gray-800 py-1">ASP.NET</p>
+              <p className="text-gray-800 py-1">C#</p>
               <p className="text-gray-800 py-1">Node.js</p>
               <p className="text-gray-800 py-1">PHP</p>
               <p className="text-gray-800 py-1">SQL</p>
@@ -146,6 +144,14 @@ export default function Home() {
               <p className="text-gray-800 py-1">API Gateway</p>
               <p className="text-gray-800 py-1">Lambda Functions</p>
               <p className="text-gray-800 py-1">Cognito</p>
+            </div>
+            <div className=" bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <h3 className="text-lg font-medium pt-8 pb-2 ">Database</h3>
+              <h4 className="py-4 text-teal-600">Technologies</h4>
+              <p className="text-gray-800 py-1">Microsoft SQL Server</p>
+              <p className="text-gray-800 py-1">MySQL</p>
+              <p className="text-gray-800 py-1">CockroachDB</p>
+              <p className="text-gray-800 py-1">Amazon RDS for PostgreSQL</p>
             </div>
           </div>
         </section>
@@ -185,11 +191,14 @@ export default function Home() {
                   <span className="text-teal-500">BCIT - Internal Project</span>
                   : This project was completed as part of the React course and
                   focuses on working with the TMDB(The movie database) API. I
-                  created the home, favorites, and search pages.
+                  created the home, favorites list, and search pages using React
+                  and CSS.{" "}
+                  <a href="https://reactavision.vercel.app/" target="_blank">
+                    <span className="text-teal-500">
+                      Click here for a demo!
+                    </span>
+                  </a>
                 </p>
-              </a>
-              <a href="https://reactavision.vercel.app/" target="_blank">
-                <span className="text-teal-500">Click here for a demo!</span>
               </a>
             </div>
             <div className="basis-1/3 flex-1">
@@ -206,31 +215,37 @@ export default function Home() {
                 />
                 <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
                   <span className="text-teal-500">BCIT - Internal Project</span>
-                  : This project was completed as part of the ASP.NET internal
-                  project and involved building a business website that sells
-                  cakes. I created the home page where users are able to select
-                  either a pre made cake or a custom cake. I also created the
-                  detail pages for both pre made and custom cakes where users
-                  can select toppings, fillings, and shape.
+                  : This full stack project was completed as part of the ASP.NET
+                  internal project and involved building a business website that
+                  features Pay Pal intergration, custom cakes, user registration
+                  and history. I created the home page where users are able to
+                  select either a pre made cake or a custom cake. I also created
+                  the detail pages for both pre made and custom cakes where
+                  users can select toppings, fillings, and shape.
                 </p>
               </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
+              <video
                 className="rounded-lg object-cover shadow-lg"
                 width={"100%"}
                 height={"100%"}
-                src={web6}
-                alt="fake bank website build with ASP.Net and C-Sharp"
+                src={web7}
+                alt="website built with react and"
+                autoPlay // Add the autoPlay attribute here
+                muted // Add the muted attribute here
+                loop // Add the loop attribute here
               />
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className="text-teal-500">Agilitek</span>: This project
-                was comissioned by Agilitek for our internal project and
-                involved creating an application that extracts transaction and
-                demographic data from user submitted segments. My contribution
-                to this project was to create a responsive dashboard where
-                widgets can be moved and resized. I also created all widgets to
-                display critial day to day information.
+                <span className="text-teal-500">Agilitek</span>: This full stack
+                project was comissioned by Agilitek and involved creating an
+                application that extracts transaction and demographic data from
+                user submitted segments. My contribution to this project was to
+                create a responsive dashboard where widgets can be moved and
+                resized. I made this dashboard using the react grid layout
+                library. I also then created all of widgets from backend to
+                frontend. We used React for the frontend, Amazon RDS for
+                database and SST for backend to deploy to AWS.
               </p>
             </div>
           </div>
