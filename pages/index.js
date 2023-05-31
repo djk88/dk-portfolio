@@ -22,7 +22,10 @@ export default function Home() {
       <main className=" bg-gray-300 px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="mb-">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="text-xl">Next.Js & Tailwind</h1>
+            <div>
+              <p className="text-sm">Built with</p>
+              <h1 className="text-xl">Next.Js & Tailwind</h1>
+            </div>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -33,7 +36,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 transition duration-700 ease-in-out"
-                  href="https://docs.google.com/document/d/1xJ0grPAab9ClEHyEMQjZqFqRiUKUnuYV/edit?usp=sharing&ouid=105584303304321756439&rtpof=true&sd=true"
+                  href="https://drive.google.com/file/d/1fjDf0i0RqGjr-q-8itPl2KB1rhUnZvoT/view?usp=drive_link"
                   target="_blank"
                 >
                   Resume
@@ -69,7 +72,8 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">About Me</h3>
+            <h3 class="text-3xl py-1 text-teal-500 font-medium">About Me</h3>
+
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Hello! My name is David Kim, and I'm a junior full stack web
               developer that recently completed the Software Systems Development
@@ -151,7 +155,9 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
+            <h3 className="text-3xl py-1 text-teal-500 font-medium dark:text-teal-500 ">
+              Portfolio
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               This section showcases the projects I've worked on throughout my
               web development journey, including both individual and
