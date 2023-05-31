@@ -55,7 +55,7 @@ export default function Home() {
               <a href="https://github.com/djk88" target="_blank">
                 <AiFillGithub />
               </a>
-              <a href="https://www.linkedin.com/in/djk-88j/" target="_blank">
+              <a href="https://www.linkedin.com/in/djk88" target="_blank">
                 <AiFillLinkedin />
               </a>
               <a href="mailto:davekim88@gmail.com">
