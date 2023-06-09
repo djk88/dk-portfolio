@@ -36,7 +36,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 transition duration-700 ease-in-out"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 transition ease-in-out duration-150 transform hover:-translate-y-1 hover:scale-110"
                   href="https://drive.google.com/file/d/1fjDf0i0RqGjr-q-8itPl2KB1rhUnZvoT/view?usp=drive_link"
                   target="_blank"
                 >
@@ -54,13 +54,13 @@ export default function Home() {
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/djk88" target="_blank">
-                <AiFillGithub />
+                <AiFillGithub className="icon" />
               </a>
               <a href="https://www.linkedin.com/in/djk88" target="_blank">
-                <AiFillLinkedin />
+                <AiFillLinkedin className="icon" />
               </a>
               <a href="mailto:davekim88@gmail.com">
-                <AiFillMail />
+                <AiFillMail className="icon" />
               </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
