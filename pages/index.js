@@ -21,7 +21,7 @@ export default function Home() {
         <Script>document.documentElement.classList.add('js')</Script>
       </Head>
       <main className=" bg-gray-300 px-10 dark:bg-gray-900 md:px-20 lg:px-40">
-        <section className="mb-">
+        <section className="">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <div>
               <p className="text-sm">Built with</p>
@@ -77,9 +77,12 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Hello! My name is David Kim, and I'm a junior full stack web
               developer that recently completed the Software Systems Development
-              (SSD) course at <span className="text-teal-500">BCIT</span>. This
-              portfolio documents my journey through the program, showcasing my
-              skills and projects I've worked on.
+              (SSD) course at the{" "}
+              <span className="text-teal-500">
+                British Columbia Institute of Technology
+              </span>{" "}
+              (BCIT). This portfolio documents my journey through the program,
+              showcasing my skills and projects I've worked on.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Prior to my foray into web development, I spent over a decade
@@ -131,7 +134,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">C#</p>
               <p className="text-gray-800 py-1">Node.js</p>
               <p className="text-gray-800 py-1">PHP</p>
-              <p className="text-gray-800 py-1">SQL</p>
+              <p className="text-gray-800 py-1">Next.js</p>
             </div>
             <div className=" bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <h3 className="text-lg font-medium pt-8 pb-2 ">
@@ -140,8 +143,9 @@ export default function Home() {
               <h4 className="py-4 text-teal-600">Technologies</h4>
               <p className="text-gray-800 py-1">S3 Bucket</p>
               <p className="text-gray-800 py-1">API Gateway</p>
-              <p className="text-gray-800 py-1">Lambda Functions</p>
+              <p className="text-gray-800 py-1">Lambda</p>
               <p className="text-gray-800 py-1">Cognito</p>
+              <p className="text-gray-800 py-1">RDS</p>
             </div>
             <div className=" bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <h3 className="text-lg font-medium pt-8 pb-2 ">Database</h3>
@@ -149,7 +153,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Microsoft SQL Server</p>
               <p className="text-gray-800 py-1">MySQL</p>
               <p className="text-gray-800 py-1">CockroachDB</p>
-              <p className="text-gray-800 py-1">Amazon RDS for PostgreSQL</p>
+              <p className="text-gray-800 py-1">PostgreSQL</p>
             </div>
           </div>
         </section>
@@ -164,10 +168,10 @@ export default function Home() {
               collaborative projects.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Each thumbnail below links to the corresponding GitHub repository,
-              where you can view the code and learn more about the project. I've
-              included a brief description of each project below to give you an
-              idea of what it's all about.
+              Each thumbnail video (except Agilitek) below links to the
+              corresponding GitHub repository, where you can view the code and
+              learn more about the project. I've included a brief description of
+              each project below to give you an idea of what it's all about.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -184,20 +188,34 @@ export default function Home() {
                   muted
                 />
               </a>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className="text-teal-500">BCIT - Internal Project</span>:
-                This web app was completed as part of the React course and
-                focuses on working with the TMDB(The movie database) API. This
-                app features the ability to browse upcoming, top, most popular
-                and now playing movies on the home page. It also has features
-                where a user can search or save a movie to their favorites list
-                using their local storage.I created the home, favorites list,
-                and search pages using React and CSS.{" "}
-                <a href="https://reactavision.vercel.app/" target="_blank">
-                  <span className="text-teal-500">Click here for a demo!</span>
-                </a>
-              </p>
-              <ul className="flex">
+              <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+                <p>
+                  <span className="text-teal-500 uppercase font-medium">
+                    Description:{" "}
+                  </span>
+                  Movie picker web app built using TMDB (The Movie Database)
+                  API. This app features the ability to browse upcoming, top,
+                  most popular and now playing movies on the home page. It also
+                  has features where a user can search or save a movie to their
+                  favorites list using their local storage.
+                  <span className="ml-2 items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
+                    <a href="https://reactavision.vercel.app/" target="_blank">
+                      <span className=" font-medium uppercase text-sm text-gray-200 hover:text-white dark:hover:text-teal-300  dark:text-teal-500">
+                        Click here for a demo!
+                      </span>
+                    </a>
+                  </span>
+                </p>
+                <p className="mt-2">
+                  <span className="text-teal-500 uppercase font-medium">
+                    Contribution:{" "}
+                  </span>
+                  I created and designed the Home, Favorite List, and Search
+                  pages. I also created the functionality for the user to save
+                  movies to their favorites list using local storage.
+                </p>
+              </div>
+              <ul className="flex mt-2">
                 <li className="ml-0">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     JavaScript
@@ -236,19 +254,29 @@ export default function Home() {
                   loop
                 />
               </a>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className="text-teal-500">BCIT - Internal Project</span>:
-                This full stack web app was completed as part of internal
-                passion project and involved building a business website that
-                features Pay Pal intergration, custom cakes, user registration
-                and history. I created the home page where users are able to
-                select either a pre made cake or a custom cake. I also created
-                the detail pages for both pre made and custom cakes where users
-                can select toppings, fillings, and shape. Created using ASP.NET
-                for backend, Microsoft SQL Server for database, and HTML/CSS for
-                frontend.
-              </p>
-              <ul className="flex">
+              <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+                <p>
+                  <span className="text-teal-500 uppercase font-medium">
+                    Description:{" "}
+                  </span>
+                  The Cake Factory e-commerce website is a full-stack app
+                  completed as part of an internal passion project. It is a
+                  business website that incorporates PayPal integration, custom
+                  cake options, user registration, and order history. The app
+                  includes a user-friendly home page where customers can choose
+                  between pre-made cakes or customize their own cakes, selecting
+                  toppings, fillings, and shape.
+                </p>
+                <p className="mt-2">
+                  <span className="text-teal-500 uppercase font-medium">
+                    Contribution:{" "}
+                  </span>
+                  I created and designed the Home and Cake Detail pages.
+                  Additionally, I integrated the SendGrid API for email
+                  confirmation.
+                </p>
+              </div>
+              <ul className="flex mt-2">
                 <li className="ml-0">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     C#
@@ -266,7 +294,12 @@ export default function Home() {
                 </li>
                 <li className="ml-1">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
-                    SQL
+                    CSS
+                  </div>
+                </li>
+                <li className="ml-1">
+                  <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
+                    SQL Server
                   </div>
                 </li>
               </ul>
@@ -282,19 +315,29 @@ export default function Home() {
                 muted // Add the muted attribute here
                 loop // Add the loop attribute here
               />
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                <span className="text-teal-500">Agilitek Solutions</span>: This
-                full stack web app was comissioned by Agilitek and involved
-                creating an application that extracts transaction and
-                demographic data from user submitted segments. My contribution
-                to this project was to create a responsive dashboard where
-                widgets can be moved and resized. I made this dashboard using
-                the react grid layout library. I also then created all of
-                widgets from backend to frontend. Created using React for the
-                frontend, Amazon RDS for database and SST for backend to deploy
-                to AWS.
-              </p>
-              <ul className="flex">
+              <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+                <p>
+                  <span className="text-teal-500 uppercase font-medium">
+                    Description:{" "}
+                  </span>
+                  This full-stack web app was developed in collaboration with
+                  Agilitek Solutions. It focuses on extracting and finding
+                  converging transaction and demographic data from
+                  user-submitted segments. The project includes the creation of
+                  a responsive dashboard with movable and resizable widgets.
+                  Layouts and locations of the widgets can be saved into local
+                  storage and reloaded on the next visit.
+                </p>
+                <p className="mt-2">
+                  <span className="text-teal-500 uppercase font-medium">
+                    Contribution:{" "}
+                  </span>
+                  I created and designed the Dashboard with widgets using the
+                  React-Grid-Layout library and integrated BarChart.js to
+                  display transaction and demographic data.
+                </p>
+              </div>
+              <ul className="flex mt-2">
                 <li className="ml-0">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     JavaScript
@@ -303,6 +346,11 @@ export default function Home() {
                 <li className="ml-1">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     React
+                  </div>
+                </li>
+                <li className="ml-1">
+                  <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
+                    Tailwind
                   </div>
                 </li>
                 <li className="ml-1">
@@ -317,7 +365,7 @@ export default function Home() {
                 </li>
                 <li className="ml-1">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
-                    AWS RDS
+                    PostgreSQL
                   </div>
                 </li>
               </ul>
