@@ -63,7 +63,7 @@ export default function Home() {
                 <AiFillMail className="icon" />
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-full relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={avatar} alt="" priority={true} />
             </div>
           </div>
@@ -114,8 +114,8 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
+            <div className="bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:flex-1">
+              <h3 className="text-lg font-medium pt-8 pb-2">
                 Frontend Development
               </h3>
               <h4 className="py-4 text-teal-600">Technologies</h4>
@@ -125,8 +125,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">Tailwind</p>
               <p className="text-gray-800 py-1">JavaScript</p>
             </div>
-            <div className="bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+            <div className="bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:flex-1">
+              <h3 className="text-lg font-medium pt-8 pb-2">
                 Back End Development
               </h3>
               <h4 className="py-4 text-teal-600">Technologies</h4>
@@ -136,8 +136,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">PHP</p>
               <p className="text-gray-800 py-1">Next.js</p>
             </div>
-            <div className=" bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
+            <div className="bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:flex-1">
+              <h3 className="text-lg font-medium pt-8 pb-2">
                 Amazon Web Services
               </h3>
               <h4 className="py-4 text-teal-600">Technologies</h4>
@@ -147,8 +147,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">Cognito</p>
               <p className="text-gray-800 py-1">RDS</p>
             </div>
-            <div className=" bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Database</h3>
+            <div className="bg-gray-200 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white lg:flex-1">
+              <h3 className="text-lg font-medium pt-8 pb-2">Database</h3>
               <h4 className="py-4 text-teal-600">Technologies</h4>
               <p className="text-gray-800 py-1">Microsoft SQL Server</p>
               <p className="text-gray-800 py-1">MySQL</p>
@@ -193,11 +193,11 @@ export default function Home() {
                   <span className="text-teal-500 uppercase font-medium">
                     Description:{" "}
                   </span>
-                  Movie picker web app built using TMDB (The Movie Database)
-                  API. This app features the ability to browse upcoming, top,
-                  most popular and now playing movies on the home page. It also
-                  has features where a user can search or save a movie to their
-                  favorites list using their local storage.
+                  Built a movie picker web app using the TMDB (The Movie
+                  Database) API. The app allows users to browse upcoming,
+                  top-rated, popular, and now playing movies. Users can search
+                  for movies by title and save or remove them to their favorites
+                  list.
                   <span className="ml-2 items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     <a href="https://reactavision.vercel.app/" target="_blank">
                       <span className=" font-medium uppercase text-sm text-gray-200 hover:text-white dark:hover:text-teal-300  dark:text-teal-500">
@@ -210,28 +210,28 @@ export default function Home() {
                   <span className="text-teal-500 uppercase font-medium">
                     Contribution:{" "}
                   </span>
-                  I created and designed the Home, Favorite List, and Search
-                  pages. I also created the functionality for the user to save
-                  movies to their favorites list using local storage.
+                  Created and designed the Home, Favorite List, and Search
+                  pages. Implemented the functionality for users to save movies
+                  to their favorites list using local storage.
                 </p>
               </div>
-              <ul className="flex mt-2">
-                <li className="ml-0">
+              <ul className="flex flex-wrap">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     JavaScript
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     React
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     TMDB
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     CSS
                   </div>
@@ -259,45 +259,43 @@ export default function Home() {
                   <span className="text-teal-500 uppercase font-medium">
                     Description:{" "}
                   </span>
-                  The Cake Factory e-commerce website is a full-stack app
-                  completed as part of an internal passion project. It is a
-                  business website that incorporates PayPal integration, custom
-                  cake options, user registration, and order history. The app
-                  includes a user-friendly home page where customers can choose
-                  between pre-made cakes or customize their own cakes, selecting
-                  toppings, fillings, and shape.
+                  Developed a full-stack e-commerce website called The Cake
+                  Factory with 4 other students. The app incorporates PayPal
+                  integration, custom cake options, user registration, and order
+                  history. It features a user-friendly home page where customers
+                  can choose between pre-made cakes or customize their own cakes
+                  by toppings, fillings, and shape.
                 </p>
                 <p className="mt-2">
                   <span className="text-teal-500 uppercase font-medium">
                     Contribution:{" "}
                   </span>
-                  I created and designed the Home and Cake Detail pages.
-                  Additionally, I integrated the SendGrid API for email
-                  confirmation.
+                  Created and designed the Home and Cake Detail pages.
+                  Integrated the SendGrid API for email confirmation.
                 </p>
               </div>
-              <ul className="flex mt-2">
-                <li className="ml-0">
+              <ul className="flex flex-wrap">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     C#
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     ASP.NET
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     JavaScript
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     CSS
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     SQL Server
                   </div>
@@ -332,38 +330,38 @@ export default function Home() {
                   <span className="text-teal-500 uppercase font-medium">
                     Contribution:{" "}
                   </span>
-                  I created and designed the Dashboard with widgets using the
-                  React-Grid-Layout library and integrated BarChart.js to
-                  display transaction and demographic data.
+                  Created and designed the Dashboard with widgets using the
+                  React-Grid-Layout library. Integrated BarChart.js to display
+                  transaction and demographic data in graph form.
                 </p>
               </div>
-              <ul className="flex mt-2">
-                <li className="ml-0">
+              <ul className="flex flex-wrap">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     JavaScript
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     React
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     Tailwind
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     SST
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     AWS
                   </div>
                 </li>
-                <li className="ml-1">
+                <li className="mr-1 mt-2">
                   <div className="flex items-center rounded-full dark:bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300  bg-teal-500 text-white">
                     PostgreSQL
                   </div>
